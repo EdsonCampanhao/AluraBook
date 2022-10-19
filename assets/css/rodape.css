@@ -1,0 +1,61 @@
+hr {
+    margin: 0;
+}
+
+.rodape {
+    background-color: var(--branco);
+    padding: 1em;
+}
+
+.lista-rodape {
+    display: none;
+}
+
+@media screen and (min-width:1024px) {
+    .rodape__titulo {
+        font-size: 24px;
+        color: black;
+
+    }
+
+    .lista-rodape__titulo {
+        color: var(--subtitulo-rodape);
+        font-size: 14px;
+    }
+
+    .lista-rodape {
+        display: flex;
+        flex-direction: column;
+        width: 20%;
+        gap: 16px;
+    }
+
+    .rodape {
+        padding-top: 54px;
+        display: flex;
+        gap: 70px;
+    }
+
+    .lista-rodape__link {
+        text-decoration: none;
+        color: var(--empresas-do-rodape);
+        font-size: 14px;
+        margin-left: .5em;
+    }
+
+    .lista-rodape__item {
+        display: flex;
+        align-items: center;
+    }
+
+}
+
+@media screen and (min-width:1024px) {
+    .lista-rodape {
+        padding-left: 20px;
+        border-left: 1px solid var(--subtitulo-rodape);
+    }
+    .rodape{
+        justify-content:center;
+    }
+}
